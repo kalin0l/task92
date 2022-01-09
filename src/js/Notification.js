@@ -15,7 +15,7 @@ export default class Notification {
     this.container.classList.add("notification-container");
 
     this.container.addEventListener('click',this.render);
-    this.render();
+    // this.render();
   }
   deleteContent(){
     this.container.innerHTML = ''
