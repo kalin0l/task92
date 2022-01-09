@@ -29,7 +29,7 @@ export default class Application extends EventEmitter {
 
     pizzas.forEach((pizza) => {
       const card = new Card({ ...pizza });
-      card.render();
+      card.render(pizzas.price,pizzas.type);
 
       document.querySelector(".main").appendChild(card.container);
     });
