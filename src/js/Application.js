@@ -26,6 +26,7 @@ export default class Application extends EventEmitter {
         price: 7.99,
       },
     ];
+    const notification = new Notification();
 
     pizzas.forEach((pizza) => {
       const card = new Card({ ...pizza });
